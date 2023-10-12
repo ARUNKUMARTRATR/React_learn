@@ -1,38 +1,87 @@
-.App {
-  text-align: center;
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+* {
+	box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+	box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+	overflow: hidden;
+  background: linear-gradient(-135deg,#ffb13d,#ed5a00);
+  color: #333;
+	font-family: 'Open Sans', Helvetica, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.center {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: center;
+	position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+	width: 150px;
+	height: 50px;
+	border-radius: 25px;
+	background: white;
+	box-shadow: 3px 5px 7px #ed5a00;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.minus, .result, .plus {
+	width: 32px;
+	height: 32px;
+	text-align: center;
+	line-height: 30px;
+	border-radius: 50%;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 30px;
+	font-weight: bold;
+	color: #77aee6;
+	transition-duration: 0.5s; 
 }
 
-.App-link {
-  color: #61dafb;
+.minus-horz {
+	position: absolute;
+	top: 24px;
+	left: 18px;
+	width: 23px;
+	height: 2px;
+	background-color: #ff282c;
+	transition-duration: 0.5s;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.horz {
+	position: absolute;
+	top: 24px;
+	left: 110px;
+	width: 22px;
+	height: 2px;
+	background-color: #bbff7c;
+	transition-duration: 0.5s;
+}
+
+.vert {
+	position: absolute;
+	top: 14px;
+	left: 120px;
+	width: 2px;
+	height: 22px;
+	background-color: #bbff7c;
+	transition-duration: 0.5s;
+}
+
+.result {
+	transition-duration: 0.1s;
+	transition-timing-function: ease-in-ease-out;
 }
