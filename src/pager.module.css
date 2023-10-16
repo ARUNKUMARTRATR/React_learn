@@ -1,0 +1,47 @@
+.main_sec {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  width: 700px;
+  max-width: 700px;
+  background-color: rgb(243, 248, 246);
+  border-radius: 5px;
+}
+
+.item_sec {
+  width: 40px;
+  height: 45px;
+  padding: 10px;
+  margin: 9px;
+  border-radius: 5px;
+  cursor: pointer;
+  &:hover {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    cursor: pointer;
+  }
+}
+.left_arr,
+.right_arr {
+  width: 35px;
+  height: 45px;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  &:hover {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    cursor: pointer;
+  }
+}
+.number_active {
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+
+.disabled {
+  cursor: crosshair;
+  pointer-events: none;
+  opacity: 0.5;
+}

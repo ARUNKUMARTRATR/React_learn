@@ -1,12 +1,10 @@
 import "./App.css";
-import Counter from "./pages/Counter";
-
+import Employee from "./pages/Employee";
 function App() {
   return (
-      <div>
-        <Counter initial={0} />
-      </div>
-    
+    <>
+      <Employee />
+    </>
   );
 }
 
