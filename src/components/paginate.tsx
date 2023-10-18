@@ -3,7 +3,7 @@ import {
   faChevronRight,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import styles from "../pager.module.css";
+import styles from "../styles/pager.module.css";
 import { useEffect, useState } from "react";
 
 function Paginate(props: any) {

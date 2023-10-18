@@ -4,6 +4,7 @@ import User from "../components/user";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTrash } from "@fortawesome/free-solid-svg-icons";
 import Paginate from "../components/paginate";
+import { useNavigate } from "react-router-dom";
 
 function Employee() {
   const [employeeList, setList] = useState<any[]>([]);
@@ -12,6 +13,7 @@ function Employee() {
   const [pageSize, setPageSize] = useState(10);
   const [sort, setSort] = useState("asc");
   const [isLoading, setLoading] = useState(true);
+  const navigate = useNavigate();
   useEffect(() => {
     getData(1).then(async (res: any) => {
       const data = await res.json();
@@ -105,6 +107,9 @@ function Employee() {
                 onClick={() => {
                   onListClick("li", item);
                 }}
+                onDoubleClick={() =>
+                  navigate(`/React_learn/details/${item.id}`)
+                }
               >
                 <div className="details">
                   <img
@@ -144,7 +149,7 @@ function Employee() {
             onPageChange={getDataWithProperties}
           /> */}
 
-          <Paginate emitButtonData={getDataWithProperties}/>
+          <Paginate emitButtonData={getDataWithProperties} />
         </div>
       </div>
       <div className="right">
