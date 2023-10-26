@@ -1,6 +1,7 @@
 import { faArrowDown, faArrowUp } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 function Navbar(props: any) {
   const { onSortOrPageChange } = props;
@@ -8,7 +9,7 @@ function Navbar(props: any) {
   const [pageSize, setPageSize] = useState(10);
 
   const OnSort = () => {
-    const sO = sortOrder === "asc" ? "desc" : "asc"
+    const sO = sortOrder === "asc" ? "desc" : "asc";
     setSortOrder(sO);
     sendDataToList(pageSize, sO);
   };
@@ -29,6 +30,9 @@ function Navbar(props: any) {
         <span className="navbar-brand">#LEARN REACT</span>
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav">
+            <Link to={"/React_learn/products"}>
+              <h4>Go To Products</h4>
+            </Link>
             <li className="nav-item arrow-icon">
               {sortOrder === "asc" ? (
                 <FontAwesomeIcon icon={faArrowDown} onClick={OnSort} />
