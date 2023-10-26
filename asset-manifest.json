@@ -1,18 +1,19 @@
 {
   "files": {
-    "main.css": "/React_learn/static/css/main.e9790dd7.css",
-    "main.js": "/React_learn/static/js/main.da963062.js",
+    "main.css": "/React_learn/static/css/main.7b83c80b.css",
+    "main.js": "/React_learn/static/js/main.747b088d.js",
     "static/js/787.8acf8ccf.chunk.js": "/React_learn/static/js/787.8acf8ccf.chunk.js",
-    "static/media/IPhone.jfif": "/React_learn/static/media/IPhone.ae72fdd4e8657a71e3df.jfif",
     "static/media/s23.jpg": "/React_learn/static/media/s23.bf5e38b639a6aea654f1.jpg",
     "static/media/google pixel.webp": "/React_learn/static/media/google pixel.04d1a39b54912cc1f38b.webp",
+    "static/media/iphone.jfif": "/React_learn/static/media/iphone.35149e82fe0b0c2aedcb.jfif",
+    "static/media/vivo.webp": "/React_learn/static/media/vivo.fcefb2497d12a197ea25.webp",
     "index.html": "/React_learn/index.html",
-    "main.e9790dd7.css.map": "/React_learn/static/css/main.e9790dd7.css.map",
-    "main.da963062.js.map": "/React_learn/static/js/main.da963062.js.map",
+    "main.7b83c80b.css.map": "/React_learn/static/css/main.7b83c80b.css.map",
+    "main.747b088d.js.map": "/React_learn/static/js/main.747b088d.js.map",
     "787.8acf8ccf.chunk.js.map": "/React_learn/static/js/787.8acf8ccf.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e9790dd7.css",
-    "static/js/main.da963062.js"
+    "static/css/main.7b83c80b.css",
+    "static/js/main.747b088d.js"
   ]
 }
