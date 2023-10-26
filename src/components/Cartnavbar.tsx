@@ -15,7 +15,12 @@ function Cartnavbar() {
         onClick={() => navigate("/React_learn/cartDetails")}
         className={style.icon_sec}
       >
-        <span className={style.badge}>{contextData.getCartCount()}</span>
+        {contextData.getCartCount() ? (
+          <span className={style.badge}>{contextData.getCartCount()}</span>
+        ) : (
+          ""
+        )}
+
         <FontAwesomeIcon icon={faCartShopping} size="xl" />
       </div>
     </div>
