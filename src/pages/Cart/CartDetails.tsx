@@ -25,6 +25,7 @@ function CartDetails() {
           <ul>
             {contextData.cartData.map((item: any) => (
               <li key={item.id}>
+                <img src={item.img_url} alt="imageData" />
                 <span>{item.name}</span>
                 <span>{item.color}</span>
                 <span>${item.price}</span>

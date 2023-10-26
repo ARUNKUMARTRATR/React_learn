@@ -55,7 +55,7 @@
 
 .cart_img {
   height: 150px;
-  width: 250px;
+  width: 200px;
   margin-top: 10px;
   mix-blend-mode: multiply;
 }
@@ -95,15 +95,27 @@
 }
 
 .cart_details_main > ul > li{
-  width: 90%;
+  width: 95%;
   display: flex;
+  justify-content: space-between;
   height: 50px;
   background-color: rgb(219, 217, 217);
-  margin: 12px;
   border-radius: 7px;
+  margin: 20px;
   padding: 10px;
 }
 .cart_details_main > ul > li> button {
   font-size: 12px;
   width: 70px;
+}
+
+.cart_details_main > ul {
+  margin: 0px;
+}
+
+.cart_details_main > ul > li> img {
+  width: 30px;
+  height: 30px;
+  mix-blend-mode: multiply;
+  margin-right: 10px;
 }

@@ -14,7 +14,7 @@ function ProductList() {
           <li key={x.id}>
             <img
               className={style.cart_img}
-              src={require("../../assets/IPhone.jfif")}
+              src={x.img_url}
               alt="img"
             />
             <div className={style.details}>
