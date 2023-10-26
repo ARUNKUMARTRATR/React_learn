@@ -46,10 +46,13 @@
   height: 100%;
   border-radius: 14px;
 }
-.back_icon{
+.back_icon {
   width: 100px;
   height: 100px;
   top: 20px;
   position: absolute;
   cursor: pointer;
+}
+h2 {
+  text-align: center;
 }

@@ -83,7 +83,7 @@ function Details() {
     navigate(-1);
   };
 
-  return params.id ? (
+  return params.id === userData.id ? (
     <>
       <span onClick={navigateBack} className={style.back_icon}>
         <FontAwesomeIcon icon={faArrowLeft} size="2xl" />
@@ -169,7 +169,7 @@ function Details() {
       </div>
     </>
   ) : (
-    <h1>No Data</h1>
+    <h2>No Data...</h2>
   );
 }
 
